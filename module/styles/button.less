@@ -1,0 +1,26 @@
+.btb-react-button {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  .button_item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.25rem;
+    background-color: white;
+    transition: background-color 0.3s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(gray, 40%);
+    }
+    &:first-child {
+      padding-left: 0.5rem;
+    }
+    &:last-child {
+      padding-right: 0.5rem;
+    }
+  }
+}

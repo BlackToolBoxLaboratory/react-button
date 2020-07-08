@@ -1,0 +1,53 @@
+.btb-react-button-group {
+  display: inline-flex;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  &.group-horizontal  {
+    flex-direction: row;
+    align-items: stretch;
+    .group_member { 
+      & + .group_member {
+        border-left: 1px solid gray;
+      }
+      &:first-child {
+        padding-left: 0.5rem;
+      }
+      &:last-child {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+  &.group-vertical {
+    flex-direction: column;
+    .group_member { 
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      & + .group_member {
+        border-top: 1px solid gray;
+      }
+    }
+  }
+
+  .group_member {
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.25rem;
+    background-color: white;
+    transition: background-color 0.3s ease 0s;
+    cursor: pointer;
+
+    &.member-empty {
+      font-size: 0.75rem;
+      color: gray;
+      background-color: lighten(gray, 40%);
+      cursor: not-allowed;
+    }
+    &:hover {
+      background-color: lighten(gray, 40%);
+    }
+  }
+}
