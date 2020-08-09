@@ -22,4 +22,4 @@ Please file [issue](https://github.com/BlackToolBoxLaboratory/react-button/issue
 
 # Homepage
 
-You can see the document website [on-line](https://blacktoolboxlaboratory.github.io/react/v2/#/react-button/basic).
+You can see the document website [on-line](https://blacktoolboxlaboratory.github.io/react/v2/#/packages/button/basic).

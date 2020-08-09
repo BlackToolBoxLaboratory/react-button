@@ -1,3 +1,11 @@
+## v1.2.1
+
+> Aug, 9, 2020
+
+- **Minor**: For button group, support to add buttons by buttonList.
+- **Minor**: For button group, add activeID, defaultActiveID.
+- **Issue**: For button group, rename event function from onGroupClick to onEntryClick.
+
 ## v1.0.0
 
 > Jul, 8, 2020

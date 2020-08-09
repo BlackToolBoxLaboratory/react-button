@@ -6,9 +6,8 @@
 
   &.group-horizontal  {
     flex-direction: row;
-    align-items: stretch;
-    .group_member { 
-      & + .group_member {
+    .group_button { 
+      & + .group_button {
         border-left: 1px solid gray;
       }
       &:first-child {
@@ -21,16 +20,16 @@
   }
   &.group-vertical {
     flex-direction: column;
-    .group_member { 
+    .group_button { 
       padding-left: 0.5rem;
       padding-right: 0.5rem;
-      & + .group_member {
+      & + .group_button {
         border-top: 1px solid gray;
       }
     }
   }
 
-  .group_member {
+  .group_button {
     flex-shrink: 0;
     flex-grow: 0;
     display: inline-block;
@@ -40,7 +39,7 @@
     transition: background-color 0.3s ease 0s;
     cursor: pointer;
 
-    &.member-empty {
+    &.button-empty {
       font-size: 0.75rem;
       color: gray;
       background-color: lighten(gray, 40%);

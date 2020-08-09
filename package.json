@@ -1,7 +1,7 @@
 {
   "name": "@blacktoolbox/react-button",
   "packageName": "btblab-react-button",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Button / Button Group maker based on React",
   "main": "lib/index.js",
   "module": "esm/index.js",
