@@ -1,15 +1,15 @@
-const gulp = require('gulp')
-const del = require('del')
+const gulp = require('gulp');
+const del = require('del');
 
-const path_backup = '../codebase/react-button'
+const path_backup = '../codebase/react-button';
 
-gulp.task('backup', async function(done){
+gulp.task('backup', async function(done) {
   /* clean files */
-  await del([path_backup + '/'], {force: true})
+  await del([`${path_backup}/`], {force : true});
 
   /* module */
   gulp.src(['module/**/*'])
-    .pipe(gulp.dest(path_backup + '/module/'))
+    .pipe(gulp.dest(`${path_backup}/module/`));
   /* others */
   gulp.src([
     '.eslintrc.js',
@@ -22,8 +22,8 @@ gulp.task('backup', async function(done){
     'rollup.config.js',
     'gulpfile.js'
   ])
-    .pipe(gulp.dest(path_backup))
+    .pipe(gulp.dest(path_backup));
   done();
-})
+});
 
-gulp.task('default', gulp.series(['backup']))
+gulp.task('default', gulp.series(['backup']));
