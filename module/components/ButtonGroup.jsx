@@ -9,7 +9,6 @@ const ButtonGroup = React.forwardRef((props, ref) => {
     state_activeID : useActiveState(),
     direction      : (props.direction)? props.direction : 'horizontal',
     styleObj       : formatCamelCase(props.styleObj || {}),
-    slotObj        : props.slotObj || {}
   };
 
   function _onEntryClick (id, content) {
