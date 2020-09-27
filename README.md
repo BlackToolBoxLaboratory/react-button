@@ -9,10 +9,10 @@ Using with [NPM](https://www.npmjs.com/):
     $ npm install --save @blacktoolbox/react-button
 
     // using ES6 modules
-    import Menu from '@blacktoolbox/react-button';
+    import Button from '@blacktoolbox/react-button';
 
     // using CommonJS modules
-    var Menu = require('@blacktoolbox/react-button');
+    var Button = require('@blacktoolbox/react-button');
 
 # Issue
 
