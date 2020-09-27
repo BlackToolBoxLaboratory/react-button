@@ -9,10 +9,11 @@ Using with [NPM](https://www.npmjs.com/):
     $ npm install --save @blacktoolbox/react-button
 
     // using ES6 modules
-    import Button from '@blacktoolbox/react-button';
+    import { Button, ButtonGroup } from '@blacktoolbox/react-button';
 
     // using CommonJS modules
-    var Button = require('@blacktoolbox/react-button');
+    var Button = require('@blacktoolbox/react-button').Button;
+    var ButtonGroup = require('@blacktoolbox/react-button').ButtonGroup;
 
 # Issue
 
