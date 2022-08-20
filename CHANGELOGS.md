@@ -1,3 +1,9 @@
+## v1.3.1
+
+> Aug, 20, 2022
+
+- **Minor**: Using Button tag and support to be disable.
+
 ## v1.2.1
 
 > Aug, 9, 2020

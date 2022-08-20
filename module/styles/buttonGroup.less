@@ -4,26 +4,32 @@
   border-radius: 0.5rem;
   overflow: hidden;
 
-  &.group-horizontal  {
+  &.group-horizontal {
     flex-direction: row;
-    .group_button { 
-      & + .group_button {
+
+    .group_button {
+      &+.group_button {
         border-left: 1px solid gray;
       }
+
       &:first-child {
         padding-left: 0.5rem;
       }
+
       &:last-child {
         padding-right: 0.5rem;
       }
     }
   }
+
   &.group-vertical {
     flex-direction: column;
-    .group_button { 
+
+    .group_button {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
-      & + .group_button {
+
+      &+.group_button {
         border-top: 1px solid gray;
       }
     }
@@ -38,6 +44,8 @@
     background-color: white;
     transition: background-color 0.3s ease 0s;
     cursor: pointer;
+    border: 0;
+    font-size: 1rem;
 
     &.button-empty {
       font-size: 0.75rem;
@@ -45,8 +53,11 @@
       background-color: lighten(gray, 40%);
       cursor: not-allowed;
     }
-    &:hover {
-      background-color: lighten(gray, 40%);
+
+    &:not(:disabled) {
+      &:hover {
+        background-color: lighten(gray, 40%);
+      }
     }
   }
 }

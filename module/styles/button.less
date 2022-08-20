@@ -4,6 +4,8 @@
   border: 1px solid gray;
   border-radius: 0.5rem;
   overflow: hidden;
+  padding: 0;
+  font-size: 1rem;
 
   .button_item {
     display: inline-block;
@@ -13,14 +15,19 @@
     transition: background-color 0.3s ease 0s;
     cursor: pointer;
 
-    &:hover {
-      background-color: lighten(gray, 40%);
-    }
     &:first-child {
       padding-left: 0.5rem;
     }
     &:last-child {
       padding-right: 0.5rem;
+    }
+  }
+
+  &:not(:disabled) {
+    .button_item {
+      &:hover {
+        background-color: lighten(gray, 40%);
+      }
     }
   }
 }
