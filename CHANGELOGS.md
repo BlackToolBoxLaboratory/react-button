@@ -2,7 +2,8 @@
 
 > Aug, 20, 2022
 
-- **Minor**: Using Button tag and support to be disable.
+- **Minor**: Support to be disable.
+- **Issue**: Using Button tag.
 
 ## v1.2.1
 
