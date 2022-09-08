@@ -1,3 +1,9 @@
+## v1.3.3
+
+> Sep, 8, 2022
+
+- **Issue**: Fix bug of disabled.
+
 ## v1.3.2
 
 > Aug, 21, 2022

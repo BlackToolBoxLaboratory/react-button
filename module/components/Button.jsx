@@ -10,22 +10,22 @@ const Button = React.forwardRef((props, ref) => {
   };
 
   function _onButtonClick() {
-    if (typeof props.onClick != 'undefined' || props.disabled) {
+    if (typeof props.onClick != 'undefined' && !props.disabled) {
       props.onClick(props);
     }
   }
   function _onPrependClick() {
-    if (typeof props.onPrependClick != 'undefined' || props.disabled) {
+    if (typeof props.onPrependClick != 'undefined' && !props.disabled) {
       props.onPrependClick(props);
     }
   }
   function _onCoreClick() {
-    if (typeof props.onCoreClick != 'undefined' || props.disabled) {
+    if (typeof props.onCoreClick != 'undefined' && !props.disabled) {
       props.onCoreClick(props);
     }
   }
   function _onAppendClick() {
-    if (typeof props.onAppendClick != 'undefined' || props.disabled) {
+    if (typeof props.onAppendClick != 'undefined' && !props.disabled) {
       props.onAppendClick(props);
     }
   }
